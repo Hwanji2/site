@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이지환의 포트폴리오</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        /* 슬라이드 컨테이너 스타일 */
+        .slider-container {
+            width: 100%;
+            height: 50vh; /* 슬라이드 높이 조정 */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .slider {
+            display: flex;
+            width: 100%;
+            height: 100%;
+            transition: transform 1s ease-in-out;
+        }
+
+        .slide {
+            min-width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+            background-color: #f0f0f0;
+            position: relative;
+            overflow: hidden; /* 글자가 밀려서 나가는 것을 방지 */
+        }
+
+        /* 타이핑 애니메이션 */
+        .typing-animation {
+            font-size: 2.5em;
+            font-weight: 600; /* 글자 굵기 설정 */
+            white-space: nowrap;
+            overflow: hidden;
+            border-right: 4px solid #fff;
+            width: 0;
+            animation: typing 4s steps(30) 1s forwards, blink 0.75s step-end infinite;
+        }
+
+        @keyframes typing {
+            from {
+                width: 0;
+            }
+            to {
+                width: 100%;
+            }
+        }
+
+        @keyframes blink {
+            50% {
+                border-color: transparent;
+            }
+        }
+
+        /* 슬라이드 내용 가운데 정렬 */
+        .slide div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            height: 100%;
+        }
+
+        /* 슬라이드 제목 */
+        .slide h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            font-weight: 600; /* 굵기 설정 */
+        }
+
+        /* 슬라이드 본문 */
+        .slide p {
+            font-size: 1.2em;
+            color: #333;
+            max-width: 700px;
+            margin: 0 auto;
+            line-height: 1.5;
+            font-weight: 400; /* 본문 글자 굵기 설정 */
+        }
+
+        /* 강한 글씨를 적용하려면 <strong> 태그 사용 */
+        .slide p strong {
+            font-weight: bold; /* 강하게 표시될 텍스트 */
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>이지환의 포트폴리오</h1>
+        <!-- 검색바 -->
+        <div class="search-container">
+            <input type="text" id="search-bar" placeholder="프로젝트 검색..." oninput="searchProjects()">
+            <button id="search-icon" onclick="searchProjects()">🔍</button>
+        </div>
+    </header>
+
+    <!-- 이미지 슬라이드 섹션 -->
+    <section class="slider-container">
+        <div class="slider" id="slider">
+            <!-- 첫 번째 슬라이드: 기술과 예술의 융합 -->
+            <div class="slide">
+                <div>
+                    <h2 class="typing-animation">내일을 향한 걸음</h2>
+                    <p>저는 어릴 적부터 호기심이 많아 기술과 예술<br> 종합적인 분야를 탐구하며 성장했습니다.<br> 
+                         덕분에 각기 독립적인 요소 간의 관계를 발견하고
+                        <br>기존의 한계에 대한 간단한 해결책을 제시하는 것을 <br>즐기며 이를 통해 인식한 문제들을 해결하고자 살아갑니다.
+                        </p>
+                </div>
+            </div>
+            <!-- 두 번째 슬라이드: 왜 컴퓨터공학부인가 -->
+            <div class="slide">
+                <div>
+                    <h2 class="typing-animation">왜 컴퓨터공학부인가?</h2>
+                    <p>어렸을 때부터 <strong>앱인벤터</strong>와 같은 <strong>블록코딩</strong>을 접하며 프로그램 설계에 대한 흥미를 느꼈고, 이를 통해 <strong>기술을 활용한 문제 해결</strong>의 기회를 얻었습니다. 그러나 그 당시에는 <strong>컴퓨터 과학(CS) 지식</strong>에 대해 깊이 있게 접할 기회가 없었고, 막연하게 그 분야에 대한 이해가 부족했습니다. 하지만 대학생이 되어 <strong>CS 지식</strong>을 본격적으로 배우기 시작하면서, 그 길에 대한 확신이 생겼습니다.</p>
+                </div>
+            </div>
+
+            <!-- 세 번째 슬라이드: 컴퓨터공학을 통한 미래사회의 선도 -->
+            <div class="slide">
+                <div>
+                    <h2 class="typing-animation">컴퓨터공학을 통한 미래사회의 선도</h2>
+                    <p>저는 <strong>기업가 정신</strong>을 바탕으로 <strong>창업</strong>을 준비해 왔고, 이를 실현하기 위해 <strong>건국대학교 창업지원단</strong>에 참여하였습니다. 앞으로의 <strong>투자</strong>와 <strong>창업</strong>을 위해 <strong>건국대학교 컴퓨터공학부</strong> 소속이 되어 <strong>기술적 역량</strong>을 갖춘 전문가로 성장하고 싶습니다. <strong>컴퓨터공학부</strong>에서의 학문적 배경과 창업 경험을 바탕으로, <strong>미래 사회의 변화를 선도</strong>할 수 있는 인재로 성장할 것입니다.</p>
+                </div>
+            </div>
+
+            <!-- 네 번째 슬라이드: 기업가 정신과 창업 준비 -->
+            <div class="slide">
+                <div>
+                    <h2 class="typing-animation">기업가 정신과 창업 준비</h2>
+                    <p>어린 시절부터 <strong>앱인벤터</strong>와 같은 블록코딩을 접하며 프로그램 설계에 대해 흥미를 가졌고, 그 과정에서 <strong>기술적 문제 해결</strong>에 대한 생각을 발전시켰습니다. 이러한 경험을 바탕으로 <strong>기업가 정신</strong>을 키우며 <strong>창업</strong>을 목표로 다양한 프로그램에 참여했습니다. 지금은 건국대학교 창업지원단에 들어가 <strong>실제 창업을 위한 준비</strong>를 하고 있습니다.</p>
+                </div>
+            </div>
+
+            <!-- 다섯 번째 슬라이드: 컴퓨터공학을 통한 사회적 기여 -->
+            <div class="slide">
+                <div>
+                    <h2 class="typing-animation">컴퓨터공학을 통한 사회적 기여</h2>
+                    <p>저는 <strong>기술과 예술의 융합</strong>을 통해 사회문제를 해결하고, <strong>IT 기술</strong>을 바탕으로 <strong>사회적 가치를 창출</strong>할 수 있는 방법을 고민해 왔습니다. <strong>건국대학교 컴퓨터공학부</strong>에서의 교육을 통해 <strong>사회적 책임</strong>을 다하는 <strong>기술 혁신</strong>을 이끌어가고 싶습니다. 또한 <strong>창업</strong>을 통해 <strong>지속 가능한 발전</strong>을 목표로 노력할 것입니다.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 포트폴리오 섹션 -->
+    <section class="portfolio-container" id="portfolio-container">
+        <!-- 자바스크립트에서 동적으로 포트폴리오 항목들이 추가됩니다. -->
+    </section>
+
+    <script src="js/scripts.js"></script>
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+        const totalSlides = slides.length;
+
+        function showNextSlide() {
+            currentSlide = (currentSlide + 1) % totalSlides;
+            document.getElementById('slider').style.transform = `translateX(-${currentSlide * 100}%)`;
+        }
+
+        setInterval(showNextSlide, 6000); // 6초마다 슬라이드 변경
+    </script>
+</body>
+</html>
