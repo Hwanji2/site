@@ -105,7 +105,16 @@ h1 {
 .category-external {
     background: linear-gradient(45deg, #ffeb3b, #fbc02d, #f9a825); /* 대외활동 카테고리 */
 }
-.category-android {
+.category-ts {
+    background: linear-gradient(45deg, #b4ac5d, #fbc02d, #f9a825); /* 대외활동 카테고리 */
+}
+.category-js {
+    background: linear-gradient(45deg, #eae3a8, #fdd776, #d8b680); /* 대외활동 카테고리 */
+}
+.category-flutter {
+    background: linear-gradient(45deg, #11e3e3, #297cb4, #4324b5); 
+}
+.category-konkuk {
     background: linear-gradient(45deg, #3ddc84, #56b62b, #74c69d); /* 안드로이드 카테고리 */
 }
 
@@ -237,12 +246,12 @@ h1 {
 
 .portfolio-item:hover .project-title {
     color: #ffffff; /* 호버 시 흰색으로 변경 */
-    font-size: 2.2em; /* 호버 시 폰트 크기 키움 */
+    font-size: 2.0em; /* 호버 시 폰트 크기 키움 */
 }
 
 /* 프로젝트 설명 스타일 */
 .project-description {
-    font-size: 1.2em;
+    font-size: 1.0em;
     color: #ccc;
 }
 
