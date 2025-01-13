@@ -115,7 +115,7 @@ document.addEventListener('DOMContentLoaded', () => {
             category: 'flutter',
             award: false,
             date: '진행 중',
-            link: 'https://github.com/orgs/KUIT-BARO/repositories'
+            link: 'https://github.com/Hwanji2/To-do-Sorted-list'
         },
         {
             title: 'KUIT 데모데이<br> 모임을 최적화한<br> 서비스',
