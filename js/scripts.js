@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', () => {
             title: '부트사차원 ICT<br>공모전_공유 킥보드 분산 주차 할인 시스템',
             description: 'Flutter와 Dart를 사용하여 공유 킥보드 주차 할인 시스템을 개발했습니다.',
             category: 'flutter',
-            award: true,
+            award: false,
             date: '2024-1',
             link: 'https://github.com/Hwanji2/OnTrack_FE'
         },
