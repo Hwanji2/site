@@ -1,3 +1,21 @@
+
+// 프로젝트 항목을 정렬할 함수
+function searchProjects() {
+    const query = document.getElementById('search-bar').value.toLowerCase();
+    const portfolioItems = document.querySelectorAll('.portfolio-item');
+
+    portfolioItems.forEach(item => {
+        const title = item.querySelector('.project-title').innerText.toLowerCase();
+        const description = item.querySelector('.project-description').innerText.toLowerCase();
+
+        if (title.includes(query) || description.includes(query)) {
+            item.style.display = 'block';
+        } else {
+            item.style.display = 'none';
+        }
+    });
+}
+
 // 프로젝트 항목들 추가 (실제 데이터)
 document.addEventListener('DOMContentLoaded', () => {
     const portfolioContainer = document.getElementById('portfolio-container');
@@ -53,7 +71,7 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         {
             title: 'JAVA 프로그래밍<br>_단어장 GUI<br>구현',
-            description: 'Java와 JavaScript로 단어장 및 퀴즈 프로그램을 개발했습니다.',
+            description: 'Java와 JavaScript로 단어장 및<br> 퀴즈 프로그램을 개발했습니다.',
             category: 'java',
             award: false,
             date: '2024-2',
