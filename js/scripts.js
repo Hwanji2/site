@@ -110,6 +110,14 @@ document.addEventListener('DOMContentLoaded', () => {
             link: 'https://github.com/Hwanji2/Sai'
         },
         {
+            title: '우선 순위 기반<br> 할 일 관리 어플',
+            description: '할 일을 좀 더 체계적으로 돕는 어플입니다.',
+            category: 'flutter',
+            award: false,
+            date: '진행 중',
+            link: 'https://github.com/orgs/KUIT-BARO/repositories'
+        },
+        {
             title: 'KUIT 데모데이<br> 모임을 최적화한<br> 서비스',
             description: 'KUIT 데모데이 모임을 위한 최적화된 서비스를 개발 중입니다.',
             category: 'web',
