@@ -71,7 +71,7 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         {
             title: 'JAVA 프로그래밍<br>_단어장 GUI<br>구현',
-            description: 'Java와 JavaScript로 단어장 및<br> 퀴즈 프로그램을 개발했습니다.',
+            description: 'Java로 단어장 및<br> 퀴즈 프로그램을 개발했습니다.',
             category: 'java',
             award: false,
             date: '2024-2',
@@ -134,6 +134,70 @@ document.addEventListener('DOMContentLoaded', () => {
             link: 'https://github.com/jaewonjung6446/metaverse2024'
         }
     ];
+
+    // 슬라이드 배경에 사용할 이미지 경로 배열
+const slideImages = [
+    'path/to/image1.jpg',
+    'path/to/image2.jpg',
+    'path/to/image3.jpg',
+    'path/to/image4.jpg',
+    'path/to/image5.jpg'
+];
+
+// 슬라이드 배경을 설정할 컨테이너
+const slideContainer = document.createElement('div');
+slideContainer.classList.add('slide-container');
+document.body.appendChild(slideContainer);
+
+// CSS 스타일 추가
+const style = document.createElement('style');
+style.innerHTML = `
+    .slide-container {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        z-index: -1; /* 배경에 위치하도록 설정 */
+    }
+    
+    .slide-container img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        opacity: 0.3; /* 반투명 효과 */
+        animation: slideAnimation 20s infinite;
+    }
+
+    @keyframes slideAnimation {
+        0% { opacity: 0; transform: translateX(100%); }
+        20% { opacity: 1; transform: translateX(0); }
+        80% { opacity: 1; transform: translateX(0); }
+        100% { opacity: 0; transform: translateX(-100%); }
+    }
+`;
+document.head.appendChild(style);
+
+// 슬라이드 이미지 설정 함수
+function startImageSlideshow() {
+    let index = 0;
+
+    setInterval(() => {
+        slideContainer.innerHTML = ''; // 이전 이미지를 제거
+
+        const imgElement = document.createElement('img');
+        imgElement.src = slideImages[index];
+        slideContainer.appendChild(imgElement);
+
+        index = (index + 1) % slideImages.length; // 이미지 인덱스 순환
+    }, 5000); // 5초 간격으로 이미지 변경
+}
+
+// DOM 로드 후 슬라이드 시작
+document.addEventListener('DOMContentLoaded', startImageSlideshow);
+
 
     projects.forEach(project => {
         const portfolioItem = document.createElement('div');
