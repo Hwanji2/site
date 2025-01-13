@@ -67,7 +67,7 @@ document.addEventListener('DOMContentLoaded', () => {
             category: 'game',
             award: true,
             date: '2024-2',
-            link: 'https://github.com/Liminal-Studio'
+            link: 'https://github.com/Hwanji2/Manhole-Remake'
         },
         {
             title: 'JAVA 프로그래밍<br>_단어장 GUI<br>구현',
