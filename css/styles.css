@@ -246,7 +246,7 @@ h1 {
 
 .portfolio-item:hover .project-title {
     color: #ffffff; /* 호버 시 흰색으로 변경 */
-    font-size: 2.0em; /* 호버 시 폰트 크기 키움 */
+    font-size: 1.9em; /* 호버 시 폰트 크기 키움 */
 }
 
 /* 프로젝트 설명 스타일 */

@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
             link: 'https://github.com/Hwanji2/MovieTheaterResevationSystem'
         },
         {
-            title: '건국대학교 혁신 아이디어톤<br>_강의실 대여 및<br>열람 시스템',
+            title: '건국대학교 혁신<br>아이디어톤<br>_강의실 대여 및<br>열람 시스템',
             description: '강의실의 빈 시간표를 확인하고<br> 대여할 수 있는 시스템을<br>개발했습니다.',
             category: 'konkuk',
             award: true,
@@ -20,8 +20,8 @@ document.addEventListener('DOMContentLoaded', () => {
             link: 'https://github.com/Hwanji2/FindVoid'
         },
         {
-            title: '객체지향프로그래밍_자판기 관리<br>시스템',
-            description: 'C++로 자판기 관리 시스템을 구현했습니다.',
+            title: '객체지향<br>프로그래밍<br>_자판기 관리<br>시스템',
+            description: 'C++로 자판기 관리 시스템을<br>구현했습니다.',
             category: 'cpp',
             award: false,
             date: '2024-1',
@@ -60,7 +60,7 @@ document.addEventListener('DOMContentLoaded', () => {
             link: 'https://github.com/Hwanji2/Voca-Quiz-and-Flashcard-Program'
         },
         {
-            title: 'KUIT 해커톤<br>_휴라스틱을 극복한<br> 글쓰기 커뮤니티',
+            title: 'KUIT 해커톤<br>_휴라스틱을<br> 극복한<br> 글쓰기 커뮤니티',
             description: 'TypeScript를 사용하여 커뮤니티 서비스를 개발했습니다.',
             category: 'ts',
             award: true,
@@ -76,23 +76,23 @@ document.addEventListener('DOMContentLoaded', () => {
             link: 'https://github.com/Hwanji2/AlgoStructer-Helper'
         },
         {
-            title: '컴퓨터 프로그래밍 1_건국대학교 캠퍼스 공간에 메모를 남기는 어플',
+            title: '컴퓨터 프로그래밍 _건국대학교 캠퍼스 공간에 메모를 남기는 어플',
             description: 'Flutter와 Dart로 캠퍼스 공간에 메모를 남길 수 있는 어플을 개발했습니다.',
-            category: 'flutter',
+            category: 'konkuk',
             award: false,
             date: '2024-1',
             link: 'https://github.com/Hwanji2/PinKonkuk'
         },
         {
-            title: '오프라인 만남을 돕는 BLE 통신',
-            description: 'Flutter와 Dart로 BLE 통신을 이용한 오프라인 만남 지원 서비스를 개발 중입니다.',
+            title: '오프라인 만남을<br> 돕는 BLE 통신',
+            description: 'Flutter와 Dart로 BLE 통신을<br> 이용한 오프라인 만남 지원 서비스를 개발 중입니다.',
             category: 'flutter',
             award: false,
             date: '진행 중',
             link: 'https://github.com/Hwanji2/Sai'
         },
         {
-            title: 'KUIT 데모데이 모임을 최적화한 서비스',
+            title: 'KUIT 데모데이<br> 모임을 최적화한<br> 서비스',
             description: 'KUIT 데모데이 모임을 위한 최적화된 서비스를 개발 중입니다.',
             category: 'web',
             award: false,
@@ -102,7 +102,7 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             title: 'AI 메타버스 대회',
             description: 'AI 기술을 활용한 메타버스 프로젝트를 개발했습니다.',
-            category: 'ai',
+            category: 'external',
             award: false,
             date: '2024-1',
             link: 'https://github.com/jaewonjung6446/metaverse2024'
