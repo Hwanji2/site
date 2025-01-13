@@ -27,90 +27,127 @@ document.addEventListener('DOMContentLoaded', () => {
     setInterval(showNextSlide, 1000000); // 
 });
 
-// 프로젝트 항목들 추가 (예시 데이터)
+// 프로젝트 항목들 추가 (실제 데이터)
 document.addEventListener('DOMContentLoaded', () => {
     const portfolioContainer = document.getElementById('portfolio-container');
 
     const projects = [
         {
-            title: '웹 개발 프로젝트',
-            description: 'HTML, CSS, JavaScript를 사용하여 웹사이트를 구축했습니다.',
-            category: 'web',
+            title: 'C 프로그래밍_영화관 관리 시스템',
+            description: '영화관 좌석 예약 및 관리를 위한 시스템을 구현했습니다.',
+            category: 'c',
             image: 'image1.jpg',
-            award: true,
-            date: '2023-10-15'
-        },
-        {
-            title: '안드로이드 앱',
-            description: 'Kotlin을 사용하여 안드로이드 앱을 개발했습니다.',
-            category: 'android',
-            image: 'image2.jpg',
             award: false,
-            date: '2023-11-20'
+            date: '2024-1',
+            link: 'https://github.com/Hwanji2/MovieTheaterResevationSystem'
         },
         {
-            title: '자바 게임 개발',
-            description: '자바로 2D 게임을 개발했습니다.',
-            category: 'java',
+            title: '건국대학교 혁신 아이디어톤 (장려상)_강의실 대여 및 열람 시스템',
+            description: '강의실의 빈 시간표를 확인하고 대여할 수 있는 시스템을 개발했습니다.',
+            category: 'c-js',
+            image: 'image2.jpg',
+            award: true,
+            date: '2024-1',
+            link: 'https://github.com/Hwanji2/FindVoid'
+        },
+        {
+            title: '객체지향프로그래밍_자판기 관리 시스템',
+            description: 'C++로 자판기 관리 시스템을 구현했습니다.',
+            category: 'cpp',
             image: 'image3.jpg',
             award: false,
-            date: '2023-08-05'
+            date: '2024-1',
+            link: 'https://github.com/Hwanji2/BeverageVendingMachine'
         },
         {
-            title: 'C++ 프로젝트',
-            description: 'C++을 사용하여 콘솔 프로그램을 작성했습니다.',
-            category: 'cpp',
+            title: '부트사차원 ICT 공모전_공유 킥보드 분산 주차 할인 시스템',
+            description: 'Flutter와 Dart를 사용하여 공유 킥보드 주차 할인 시스템을 개발했습니다.',
+            category: 'flutter',
             image: 'image4.jpg',
             award: true,
-            date: '2023-09-10'
+            date: '2024-1',
+            link: 'https://github.com/Hwanji2/OnTrack_FE'
         },
         {
-            title: 'HTML5 게임 개발',
-            description: 'HTML5와 JavaScript를 사용하여 간단한 게임을 개발했습니다.',
-            category: 'web',
+            title: 'EDGE 개발경진대회 (대상)_2D 플랫포머 게임',
+            description: 'C, C++, Unity 및 C#을 사용하여 2D 플랫포머 게임을 개발했습니다.',
+            category: 'game',
             image: 'image5.jpg',
-            award: false,
-            date: '2023-07-21'
+            award: true,
+            date: '2024-1',
+            link: 'https://github.com/Hwanji2/RUNNING-TIME'
         },
         {
-            title: '안드로이드 유틸리티 앱',
-            description: '안드로이드에서 사용할 수 있는 유틸리티 앱을 개발했습니다.',
-            category: 'android',
+            title: 'EDGE 개발경진대회 (장려상)_3D FPS 게임',
+            description: 'Unity와 C#으로 3D FPS 게임을 개발했습니다.',
+            category: 'game',
             image: 'image6.jpg',
-            award: false,
-            date: '2023-12-12'
+            award: true,
+            date: '2024-2',
+            link: 'https://github.com/Liminal-Studio'
         },
         {
-            title: '자바 기반 API 개발',
-            description: '자바로 RESTful API를 개발했습니다.',
+            title: 'JAVA 프로그래밍_단어장 GUI 구현',
+            description: 'Java의 swing으로 단어장 및 퀴즈 프로그램을 개발했습니다.',
             category: 'java',
             image: 'image7.jpg',
-            award: true,
-            date: '2023-06-15'
+            award: false,
+            date: '2024-2',
+            link: 'https://github.com/Hwanji2/Voca-Quiz-and-Flashcard-Program'
         },
         {
-            title: 'C 프로젝트',
-            description: 'C 언어로 다양한 알고리즘을 구현했습니다.',
-            category: 'c',
+            title: 'KUIT 해커톤 (대상)_휴라스틱을 극복한 글쓰기 커뮤니티',
+            description: 'TypeScript를 사용하여 커뮤니티 서비스를 개발했습니다.',
+            category: 'ts',
             image: 'image8.jpg',
             award: true,
-            date: '2023-04-20'
+            date: '2025-01',
+            link: 'https://github.com/2025-CodeNova-3/T-mm_FrontEnd'
         },
         {
-            title: 'C++ 기반 게임 엔진',
-            description: 'C++를 사용하여 간단한 게임 엔진을 개발했습니다.',
+            title: '프로그래밍을 통한 문제해결_자료구조 비교 프로그램 구현',
+            description: 'C++로 다양한 자료구조의 성능을 비교하는 프로그램을 개발했습니다.',
             category: 'cpp',
             image: 'image9.jpg',
             award: false,
-            date: '2023-05-15'
+            date: '2024-02',
+            link: 'https://github.com/Hwanji2/AlgoStructer-Helper'
         },
         {
-            title: '웹 애플리케이션',
-            description: '웹 애플리케이션을 개발하여 실시간 데이터를 처리했습니다.',
-            category: 'web',
+            title: '컴퓨터 프로그래밍 1_건국대학교 캠퍼스 공간에 메모를 남기는 어플',
+            description: 'Flutter와 Dart로 캠퍼스 공간에 메모를 남길 수 있는 어플을 개발했습니다.',
+            category: 'flutter',
             image: 'image10.jpg',
-            award: true,
-            date: '2023-03-30'
+            award: false,
+            date: '2024-05-15',
+            link: 'https://github.com/Hwanji2/PinKonkuk'
+        },
+        {
+            title: '오프라인 만남을 돕는 BLE 통신',
+            description: 'Flutter와 Dart로 BLE 통신을 이용한 오프라인 만남 지원 서비스를 개발 중입니다.',
+            category: 'flutter',
+            image: 'image11.jpg',
+            award: false,
+            date: '진행 중',
+            link: 'https://github.com/Hwanji2/Sai'
+        },
+        {
+            title: 'KUIT 데모데이 모임을 최적화한 서비스',
+            description: 'KUIT 데모데이 모임을 위한 최적화된 서비스를 개발 중입니다.',
+            category: 'web',
+            image: 'image12.jpg',
+            award: false,
+            date: '진행 중',
+            link: 'https://github.com/orgs/KUIT-BARO/repositories'
+        },
+        {
+            title: 'AI 메타버스 대회',
+            description: 'AI 기술을 활용한 메타버스 프로젝트를 개발 중입니다.',
+            category: 'ai',
+            image: 'image13.jpg',
+            award: false,
+            date: '2024-2',
+            link: 'https://github.com/jaewonjung6446/metaverse2024'
         }
     ];
 
