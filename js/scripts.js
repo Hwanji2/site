@@ -79,7 +79,7 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         {
             title: 'KUIT 해커톤<br>_휴라스틱을<br> 극복한<br> 글쓰기 커뮤니티',
-            description: '텀을 활용해 유저 기반의 글쓰기<br> 커뮤니티를 개발했습니다.',
+            description: '텀을 활용해 글쓰기<br> 커뮤니티를 개발했습니다.',
             category: 'ts',
             award: true,
             date: '2025-01',
