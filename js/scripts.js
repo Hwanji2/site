@@ -46,8 +46,8 @@ document.addEventListener('DOMContentLoaded', () => {
             link: 'https://github.com/Hwanji2/BeverageVendingMachine'
         },
         {
-            title: '부트사차원 ICT<br>공모전_공유 킥보드 분산 주차 할인 시스템',
-            description: 'Flutter와 Dart를 사용하여 공유 킥보드 주차 할인 시스템을 개발했습니다.',
+            title: '부트사차원<br>_공유 킥보드 분산 주차 할인 시스템',
+            description: 'Flutter와 Arduino를 사용하여<br> 공유 킥보드 주차 할인 시스템을<br> 개발했습니다.',
             category: 'flutter',
             award: false,
             date: '2024-1',
@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         {
             title: 'EDGE<br>개발경진대회<br>_2D 플랫포머 게임',
-            description: 'C, C++, Unity 및 C#을 사용하여 2D 플랫포머 게임을 개발했습니다.',
+            description: 'C, C++, Unity 및 C#을 사용하여 타이머를 적극 활용한 2D 플랫포머 게임을 개발했습니다.',
             category: 'game',
             award: true,
             date: '2024-1',
@@ -63,7 +63,7 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         {
             title: 'EDGE<br>개발경진대회<br>_3D FPS 게임',
-            description: 'Unity와 C#으로 3D FPS 게임을 개발했습니다.',
+            description: 'Unity와 C#으로 데시벨 감지를<br> 적극 활용한 3D FPS 게임을 개발했습니다.',
             category: 'game',
             award: true,
             date: '2024-2',
@@ -71,7 +71,7 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         {
             title: 'JAVA 프로그래밍<br>_단어장 GUI<br>구현',
-            description: 'Java로 단어장 및<br> 퀴즈 프로그램을 개발했습니다.',
+            description: 'Java Swing으로 단어장 및<br> 퀴즈 프로그램을 개발했습니다.',
             category: 'java',
             award: false,
             date: '2024-2',
@@ -79,59 +79,67 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         {
             title: 'KUIT 해커톤<br>_휴라스틱을<br> 극복한<br> 글쓰기 커뮤니티',
-            description: 'TypeScript를 사용하여 커뮤니티 서비스를 개발했습니다.',
+            description: '텀을 활용해 유저 기반의 글쓰기<br> 커뮤니티를 개발했습니다.',
             category: 'ts',
             award: true,
             date: '2025-01',
             link: 'https://github.com/2025-CodeNova-3/T-mm_FrontEnd'
         },
         {
-            title: '프로그래밍을 통한 문제해결_자료구조 비교 프로그램 구현',
-            description: 'C++로 다양한 자료구조의 성능을 비교하는 프로그램을 개발했습니다.',
-            category: 'cpp',
-            award: false,
-            date: '2024-2',
-            link: 'https://github.com/Hwanji2/AlgoStructer-Helper'
-        },
-        {
             title: '컴퓨터 프로그래밍 _건국대학교 캠퍼스 공간에 메모를 남기는 어플',
-            description: 'Flutter와 Dart로 캠퍼스 공간에 메모를 남길 수 있는 어플을 개발했습니다.',
+            description: 'Flutter와 Dart로 캠퍼스 공간에<br> 메모를 남길 수 있는 어플을<br> 개발했습니다.',
             category: 'konkuk',
             award: false,
             date: '2024-1',
             link: 'https://github.com/Hwanji2/PinKonkuk'
         },
         {
-            title: '오프라인 만남을<br> 돕는 BLE 통신',
-            description: 'Flutter와 Dart로 BLE 통신을<br> 이용한 오프라인 만남 지원 서비스를 개발 중입니다.',
+            title: 'BLE 통신 활용<br> 어플',
+            description: '로컬 통신을<br> 적극 활용한<br> 프로젝트입니다.',
             category: 'flutter',
             award: false,
             date: '진행 중',
-            link: 'https://github.com/Hwanji2/Sai'
+            link: ','
         },
         {
             title: '우선 순위 기반<br> 할 일 관리 어플',
-            description: '할 일을 좀 더 체계적으로 돕는 어플입니다.',
+            description: '목표에 따라<br> 할 일을 정렬하는<br> 어플입니다.',
             category: 'flutter',
             award: false,
             date: '진행 중',
             link: 'https://github.com/Hwanji2/To-do-Sorted-list'
         },
         {
-            title: 'KUIT 데모데이<br> 모임을 최적화한<br> 서비스',
-            description: 'KUIT 데모데이 모임을 위한 최적화된 서비스를 개발 중입니다.',
+            title: 'KUIT 데모데이_<br> 약속의 중심<br> BARO 서비스',
+            description: '모임에 최적화된<br> 서비스를 개발 중입니다.',
             category: 'web',
             award: false,
             date: '진행 중',
             link: 'https://github.com/orgs/KUIT-BARO/repositories'
         },
         {
-            title: 'AI 메타버스 대회',
-            description: 'AI 기술을 활용한 메타버스 프로젝트를 개발했습니다.',
+            title: '메타몽_AI 힐링<br> 메타버스',
+            description: 'NPC들과 음성 대화를 하며 힐링할 수 있는 메타버스를 개발했습니다.',
             category: 'external',
             award: false,
             date: '2024-1',
             link: 'https://github.com/jaewonjung6446/metaverse2024'
+        },
+        {
+            title: '멀티<br> 서바이벌<br> 게임',
+            description: '데디케이트 서버를 활용한<br> 언리얼 기반<br> 멀티게임 프로젝트입니다.',
+            category: 'game',
+            award: false,
+            date: '진행 중',
+            link: ''
+        },
+        {
+            title: 'EDGE_심리 기반<br> 비주얼 게임',
+            description: '파일 입출력을 적극 활용한<br> 프로젝트입니다.',
+            category: 'game',
+            award: false,
+            date: '진행 중',
+            link: 'https://github.com/EDGE-Beaver/MainLogic'
         }
     ];
 

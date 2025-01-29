@@ -103,13 +103,13 @@ h1 {
     background: linear-gradient(45deg, #ff6347, #ff4500, #ff7777); /* 게임 카테고리 */
 }
 .category-external {
-    background: linear-gradient(45deg, #ffeb3b, #fbc02d, #f9a825); /* 대외활동 카테고리 */
+    background: linear-gradient(45deg, #d5c104, #e7c05c, #df9723); /* 대외활동 카테고리 */
 }
 .category-ts {
-    background: linear-gradient(45deg, #b4ac5d, #fbc02d, #f9a825); /* 대외활동 카테고리 */
+    background: linear-gradient(45deg, #b4ac5d, #c79a2a, #ebd88b); /* 대외활동 카테고리 */
 }
 .category-js {
-    background: linear-gradient(45deg, #eae3a8, #fdd776, #d8b680); /* 대외활동 카테고리 */
+    background: linear-gradient(45deg, #eae3a8, #fdd776, #c6923f); /* 대외활동 카테고리 */
 }
 .category-flutter {
     background: linear-gradient(45deg, #11e3e3, #297cb4, #4324b5); 
@@ -123,7 +123,7 @@ h1 {
 }
 
 .category-c {
-    background: linear-gradient(45deg, #9370db, #4b0082, #6a3d9f); /* C 카테고리 */
+    background: linear-gradient(45deg, #9370db, #a376c3, #6a3d9f); /* C 카테고리 */
 }
 
 .category-cpp {
